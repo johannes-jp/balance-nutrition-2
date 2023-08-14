@@ -5,7 +5,6 @@
     import PlanCard from "$lib/components/PlanCard.svelte";
     import TextField from "$lib/components/TextField.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Modal from "$lib/components/Modal.svelte";
 
     // <!-- Font Awesome -->
     // src="https://kit.fontawesome.com/45bf4482a3.js" 
@@ -13,17 +12,18 @@
 </script>
 
 
-<Modal message = "join our mailing list"/>
-<body class="bg-lightYellow">
-    <section id="hero" class="bg-[url('src/lib/assets/food-hero.jpg')] h-screen bg-bottom bg-cover">
-        <Header/>
-        <div class="flex flex-col flex-wrap items-center p-6 w-full object-bottom">
-            <div class="flex flex-row flex-nowrap"></div>
-                <p class="text-white text-8xl text-left">
-                    <i>It's all about <br><u>balance</u></i>.
-                </p> 
-                <div class="w-"></div>
-        <button link="#" class="text-md bg-orangeButton rounded-full text-xl mt-8 p-6 px-9 whitespace-nowrap hover:bg-orangeButtonHighlight active:bg-orange-400 justify-between">Get Started</button>
+<body class="bg-lightYellow h-screen">
+    <section id="hero" class="relative h-1/2 bg-[url('src/lib/assets/food-hero.jpg')]">
+    <!-- <section id="hero" class="bg-[url('src/lib/assets/food-hero.jpg')] h-screen bg-bottom bg-cover bg-blend-darken"> -->
+        <div class="absolute inset-0 bg-slate-700 mix-blend-darken opacity-50"></div>
+        <Header class=""/>
+        <div class="p-12 relative h-full flex items-center justify-center">
+            <div class="flex flex-col items-center m-8 gap-8">
+                <div class="text-white text-8xl text-center">
+                    <i>It's all about <br><u>balance</u>.</i>
+                </div> 
+                <button link="#" class="text-md font-semibold bg-orangeButton rounded-full text-xl mt-8 p-6 px-9 whitespace-nowrap hover:bg-orangeButtonHighlight active:bg-orange-400">Get Started</button>
+            </div>
         </div>
     </section>
 
