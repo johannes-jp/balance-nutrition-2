@@ -14,7 +14,7 @@
 
 <body class="bg-lightYellow h-screen">
     <Header class="text-lg"/>
-    <section id="hero" class="relative h-1/2 bg-left bg-cover bg-[url('src/lib/assets/food-hero.jpg')]">
+    <section id="hero" class="relative overflow-hidden h-1/2 bg-left bg-cover bg-[url('src/lib/assets/food-hero.jpg')]">
     <!-- <section id="hero" class="bg-[url('src/lib/assets/food-hero.jpg')] h-screen bg-bottom bg-cover bg-blend-darken"> -->
         <div class="absolute inset-0 bg-slate-700 mix-blend-darken opacity-20"></div>
         <div class="p-12 relative h-full flex items-center justify-center">
