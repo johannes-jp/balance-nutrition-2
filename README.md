@@ -1,6 +1,6 @@
 # about
 
-Nutrition website prototype made with Svelte & Tailwind.
+Client website prototype, approved for public release.
 
 # see it for yourself
 
